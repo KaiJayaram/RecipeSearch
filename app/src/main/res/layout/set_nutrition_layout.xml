@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/calBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Calories"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/carbBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calBox"
+        android:layout_alignStart="@+id/calBox"
+        android:layout_below="@+id/calBox"
+        android:ems="10"
+        android:hint="Carbs"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/fatBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/carbBox"
+        android:layout_alignStart="@+id/carbBox"
+        android:layout_below="@+id/carbBox"
+        android:ems="10"
+        android:hint="Fat"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/proteinBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Protein"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/fatBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kcal"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView11"
+        android:layout_toRightOf="@+id/calBox"
+        android:layout_toEndOf="@+id/calBox" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:layout_alignBaseline="@+id/fatBox"
+        android:layout_alignBottom="@+id/fatBox"
+        android:layout_toRightOf="@+id/fatBox"
+        android:layout_toEndOf="@+id/fatBox" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:layout_alignBaseline="@+id/proteinBox"
+        android:layout_alignBottom="@+id/proteinBox"
+        android:layout_toRightOf="@+id/proteinBox"
+        android:layout_toEndOf="@+id/proteinBox" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="g"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:layout_alignBaseline="@+id/carbBox"
+        android:layout_alignBottom="@+id/carbBox"
+        android:layout_toRightOf="@+id/carbBox"
+        android:layout_toEndOf="@+id/carbBox" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Nutrition"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/calBox"
+        android:layout_alignStart="@+id/calBox" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_below="@+id/proteinBox"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp" />
+
+    <Button
+        android:id="@+id/clrButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/proteinBox"
+        android:layout_alignRight="@+id/proteinBox"
+        android:layout_below="@+id/proteinBox"
+        android:text="CLEAR" />
+
+</RelativeLayout>

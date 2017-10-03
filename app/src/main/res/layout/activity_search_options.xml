@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    tools:context="com.example.liqhtninq.recipesearch.SearchOptions">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_light"
+        android:ems="10"
+        android:hint='name ex: "chicken"'
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <Button
+        android:id="@+id/ingrButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchBar"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="selectIngredients"
+        android:text="ingredients"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <Button
+        android:id="@+id/nutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RecipeList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="selectNutrition"
+        android:text="Nutrition"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+    <CheckBox
+        android:id="@+id/userCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nutButton"
+        android:layout_alignBottom="@+id/nutButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="checkBoxSelected"
+        android:text="User Recipes"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toRightOf="@+id/nutButton"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <ListView
+        android:id="@+id/RecipeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ingrButton"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="56dp"
+        android:layout_height="37dp"
+        android:layout_alignBottom="@+id/searchBar"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/searchBar"
+        android:layout_toRightOf="@+id/searchBar"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="search"
+        android:text="Go"
+        app:layout_constraintLeft_toRightOf="@+id/searchBar"
+        tools:layout_editor_absoluteY="7dp" />
+
+</RelativeLayout>
