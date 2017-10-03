@@ -81,7 +81,7 @@ public class SearchOptions extends AppCompatActivity {
             if(nutrition.get(0)!=null)
                 pro.setText(String.valueOf(nutrition.get(0)));
             if(nutrition.get(1)!=null)
-                cal.setText(String.valueOf(nutrition.get(1)));
+                cal.setText(String.valueOf(Math.floor(nutrition.get(1)/4.184)));
             if(nutrition.get(2)!=null)
                 carb.setText(String.valueOf(nutrition.get(2)));
             if(nutrition.get(3)!=null)
